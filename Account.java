@@ -2,7 +2,7 @@ package uppgift5;
 public class Account {
 
 	private String nbr;
-	private double balance;
+	private double balance;//hwj
 	private Person owner; //pga dubbelriktad association
 				
 	public Person getOwner() {
