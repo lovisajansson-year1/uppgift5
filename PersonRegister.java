@@ -31,9 +31,16 @@ public class PersonRegister{
 			personer.remove(p); //tar bort person vars pNr är samma som dne i parametern
 			}
 		}
+		return null;			
+	}
+	public Account findAccounts(String namn) {
+		Person p = this.findPerson(namn);
+		if(p!=null) {
+			for(Account a:p.getAccounts()){
+				return a;
+			}
+		}
 		return null;
-	
-				
 	}
 }
 				
